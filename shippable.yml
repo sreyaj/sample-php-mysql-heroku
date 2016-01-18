@@ -8,8 +8,8 @@ env:
     - APP_NAME=sreyaheroku2
     - CLEARDB_DATABASE_URL=mysql://shippable@127.0.0.1:3306/test?reconnect=true
     - secure: xBMelsJXNe0bkfNZMWnFATI7eWw6qz5zfXX+IzMPnb8XJPJ4Togg6jz4dAf+2Lb7fknihDRa/w48f3m26DVx1COjTBnhsbHwTBd+IcK8eEcVnUJ9bDOYW7FW7qmA13ykLNfw617VOFf1ZLx5jPR0Ex4B8EDjCdryRw1fjEzD9xvRfZTNf+uRdHUuK8QnigWVYJ74gl65FEtPuxNaVZ1wAFXx4pxY6W39KXoRLDKAkp5FRRzuLsPT58VgVFrzwO8OlH8wTW+vj2aQwd0hpqV5L7oeYJq+1x8n8dunWa4+QvduihljR0Yzj1AZERLqOnkARN6ACK8fbtP3Pql7g+Y1sw== 
-    - . $HOME/.rvm/scripts/rvm && rvm use ruby-2.0.0-p598 --default && ruby --version
 before_install:
+  - . $HOME/.rvm/scripts/rvm && rvm use ruby-2.0.0-p598 --default && ruby --version
   - which heroku || wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 before_script: 
